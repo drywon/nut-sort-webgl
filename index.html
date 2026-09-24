@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Nut Sort Test</title>
+    <title>Unity Web Player | Nut Sort</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Nut Sort Test</div>
+        <div id="unity-build-title">Nut Sort</div>
       </div>
     </div>
     <script>
@@ -60,7 +60,7 @@
         codeUrl: buildUrl + "/WebGL_V232_staging.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Nut Sort Test",
+        productName: "Nut Sort",
         productVersion: "1.0",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
@@ -110,7 +110,7 @@
 
       document.querySelector("#unity-loading-bar").style.display = "block";
 
-      var nutBuildVersion='639258534046338975';if(config.dataUrl)config.dataUrl+=(config.dataUrl.indexOf('?')>=0?'&':'?')+'v='+nutBuildVersion;if(config.frameworkUrl)config.frameworkUrl+=(config.frameworkUrl.indexOf('?')>=0?'&':'?')+'v='+nutBuildVersion;if(config.codeUrl)config.codeUrl+=(config.codeUrl.indexOf('?')>=0?'&':'?')+'v='+nutBuildVersion;loaderUrl+=(loaderUrl.indexOf('?')>=0?'&':'?')+'v='+nutBuildVersion;if(/yandex|ya-games/i.test(location.hostname||'')){window.nutSortYsdkReady=new Promise(function(resolve,reject){var s=document.createElement('script');s.src='/sdk.js';s.onload=function(){if(typeof YaGames==='undefined'){reject('sdk missing');return;}YaGames.init().then(function(x){window.ysdk=x;try{window.nutSortLang=(x.environment&&x.environment.i18n&&x.environment.i18n.lang)||'ru';}catch(e){window.nutSortLang='ru';}resolve(x);}).catch(reject);};s.onerror=reject;document.head.appendChild(s);});}
+      var nutBuildVersion='639258540215233006';if(config.dataUrl)config.dataUrl+=(config.dataUrl.indexOf('?')>=0?'&':'?')+'v='+nutBuildVersion;if(config.frameworkUrl)config.frameworkUrl+=(config.frameworkUrl.indexOf('?')>=0?'&':'?')+'v='+nutBuildVersion;if(config.codeUrl)config.codeUrl+=(config.codeUrl.indexOf('?')>=0?'&':'?')+'v='+nutBuildVersion;loaderUrl+=(loaderUrl.indexOf('?')>=0?'&':'?')+'v='+nutBuildVersion;if(/yandex|ya-games/i.test(location.hostname||'')){window.nutSortYsdkReady=new Promise(function(resolve,reject){var s=document.createElement('script');s.src='/sdk.js';s.onload=function(){if(typeof YaGames==='undefined'){reject('sdk missing');return;}YaGames.init().then(function(x){window.ysdk=x;try{window.nutSortLang=(x.environment&&x.environment.i18n&&x.environment.i18n.lang)||'ru';}catch(e){window.nutSortLang='ru';}window.__nutSortPlatformPaused=false;if(x&&x.on&&!window.__nutSortPlatformPauseHooksInstalled){window.__nutSortPlatformPauseHooksInstalled=true;x.on('game_api_pause',function(){window.__nutSortPlatformPaused=true;try{SendMessage('__NutSortYandexCompliance','OnYandexPlatformPause','');}catch(e){}});x.on('game_api_resume',function(){window.__nutSortPlatformPaused=false;try{SendMessage('__NutSortYandexCompliance','OnYandexPlatformResume','');}catch(e){}});}resolve(x);}).catch(reject);};s.onerror=reject;document.head.appendChild(s);});}
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
